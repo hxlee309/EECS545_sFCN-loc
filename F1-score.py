@@ -73,6 +73,7 @@ precision = lane_recall_total/pred_num_total
 
 print("The testing recall is", recall)
 print("The testing precision is", precision)
+print("F1 score: ", 2.0*(recall*precision)/(recall+precision))
 
 history["pred_total"] = pred_num_total
 history["lane_recall"] = lane_recall_total
